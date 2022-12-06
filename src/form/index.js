@@ -42,29 +42,30 @@ const FormTable = (props) => {
           {(fields, { add, remove }) => (
             <>
               {fields.map(({ key, name, ...restField }) => (
-                <Space key={key} align="baseline">
+                <Space key={key} align="start">
                   <Form.Item
                     {...restField}
                     label="菜名名称"
                     name={[name, 'name']}
                     rules={[{ required: true, message: '请填写名称' }]}
+                    wrapperCol={{ span: 24 }}
                   >
-                    <Input placeholder="请输入名称" style={{ width: 260 }} />
+                    <Input placeholder="请输入名称" />
                   </Form.Item>
-
                   <Form.Item
                     {...restField}
                     label="比例"
                     name={[name, 'range']}
                     rules={[{ required: true, message: '请填写比例' }]}
+                    wrapperCol={{ span: 24 }}
                   >
-                    <Input placeholder="一位正整数" style={{ width: 150 }} />
+                    <Input placeholder="一位正整数" />
                   </Form.Item>
                   <MinusCircleOutlined onClick={() => remove(name)} />
                 </Space>
               ))}
 
-              <Form.Item>
+              <Form.Item wrapperCol={{ span: 24 }}>
                 <Button type="dashed" onClick={() => add()} block icon={<PlusOutlined />}>
                   增加菜品
                 </Button>
@@ -72,8 +73,8 @@ const FormTable = (props) => {
             </>
           )}
         </Form.List>
-        <Form.Item>
-          <Button type="primary" htmlType="submit">
+        <Form.Item wrapperCol={{ span: 24 }}>
+          <Button type="primary" block htmlType="submit">
             提交
           </Button>
         </Form.Item>

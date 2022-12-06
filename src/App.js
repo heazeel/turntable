@@ -50,8 +50,8 @@ function App() {
       <div className="turntable_wrap">
         <LuckyWheel
           ref={myLucky}
-          width="600px"
-          height="600px"
+          width="32vw"
+          height="32vw"
           blocks={blocks}
           prizes={prizes}
           buttons={buttons}

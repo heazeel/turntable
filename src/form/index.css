@@ -1,10 +1,12 @@
 .turntable_form {
-  width: 600px;
+  width: 32vw;
+  max-height: 60vh;
   padding: 32px;
   border: 1px solid rgb(232, 232, 232);
   border-radius: 8px;
   margin-left: 100px;
   transition: all 0.5s;
+  overflow: auto;
 }
 
 .turntable_form:hover {

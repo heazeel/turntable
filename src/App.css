@@ -3,11 +3,11 @@
   letter-spacing: 16px;
   color: #1677ff;
   text-align: center;
-  margin-top: 40px;
+  padding-top: 40px;
 }
 
 .turntable_wrap {
-  width: 80%;
+  width: 82vw;
   height: 80vh;
   display: flex;
   align-items: center;
