@@ -33,7 +33,7 @@ const FormTable = (props) => {
       });
       form.setFieldValue('foods', values);
     }
-  }, [prizes]);
+  }, [form, prizes]);
 
   return (
     <div className="turntable_form">
